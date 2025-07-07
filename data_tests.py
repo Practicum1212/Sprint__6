@@ -1,9 +1,7 @@
 user_1 = ['Маргарита', 'Иванова', 'ул. Профсоюзная, 15', 'Чистые пруды', '79269995577', 'Звонить с 10:00 до 11:00']
 user_2 = ['Павел', 'Лагуткин', 'пр. Автотракторный, 105', 'Лубянка', '79997775522', 'Предварительно позвонить!']
 
-BASE_URL = 'https://qa-scooter.praktikum-services.ru/'
-ORDER_PAGE_URL = 'https://qa-scooter.praktikum-services.ru/order'
-DZEN_URL = 'https://dzen.ru/?yredirect=true'
+
 
 expected_texts = {
     'faq1': 'Сутки — 400 рублей. Оплата курьеру — наличными или картой.',

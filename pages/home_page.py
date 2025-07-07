@@ -1,7 +1,7 @@
 import allure
 from locators.home_page_locators import TestHomePageLocators
 from pages.base_page import BasePage
-from data_tests import DZEN_URL
+from urls import DZEN_URL
 
 
 class HomePageSamokat(BasePage):

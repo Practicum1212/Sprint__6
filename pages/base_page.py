@@ -3,6 +3,9 @@ from selenium.webdriver.support.wait import WebDriverWait
 import allure
 
 
+
+
+
 class BasePage:
     def __init__(self, driver):
         self.driver = driver
@@ -17,6 +20,7 @@ class BasePage:
         element = self.find_element_with_wait(locator)
         self.driver.execute_script('arguments[0].scrollIntoView();', element)
 
+    @allure.step('Ожидание перехода на URL')
     def wait_url_to_be(self, url):
         return WebDriverWait(self.driver, 6).until((expected_conditions.url_to_be(url)))
 
@@ -42,3 +46,4 @@ class BasePage:
     @allure.step('Проверить отображение элемента')
     def check_displaying_of_element(self, locator):
         return self.find_element_with_wait(locator).is_displayed()
+
